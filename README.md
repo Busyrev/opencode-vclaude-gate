@@ -6,18 +6,22 @@ API проверено, но человеком построчно не вычи
 
 ## Настройка vclaude.ru
 
-Для начала нужно указать vclaude.ru url в конфиге
+Для начала нужно указать vclaude.ru url в конфиге, вот так выглядит полный конфиг свежего сетапа opencode
 
 `~/.config/opencode/opencode.jsonc` 
 
 ```jsonc
 {
+  "$schema": "https://opencode.ai/config.json",
   "provider": {
     "anthropic": {
-      "options": { "baseURL": "https://vclaude.ru/v1" }
+      "options": {
+        "baseURL": "https://vclaude.ru/v1"
+      }
     }
   }
 }
+
 ```
 
 Потом /connect в опенкоде и там выбираете anthropic любую модель, кроме fable 5.1 (на 2026-09-13 она не поддерживается шлюзом)  
